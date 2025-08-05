@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ICS - AboutUs</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      /* From by Jainul */ 
+.cardsSection{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.3rem 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  transition: all .5s linear;
+}
+
+.card {
+  position: relative;
+  width:250px;
+  height: 254px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px 0;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: aliceblue !important;
+  /* overflow: hidden; */
+}
+.card .heading{
+    /* width: 100%; */
+    background: #cddbdbb1;
+    padding: 12px;
+    font-weight: 600;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    transition: all .4s linear;
+    transform: translateY(70px);
+    opacity: 0;
+    border-radius:  0 0 10px 10px ;
+    text-shadow:2px 2px 3px #454535;
+  }
+  .card:hover .heading{
+  transition: all .4s linear;
+    transform: translateY(12px);
+    opacity: 1;
+  }
+
+
+
+.cardsSection .card:nth-child(1){
+  background: #afa7a7c4 url('https://i.postimg.cc/JzwHRdk0/haidar.png') center no-repeat;
+  background-size: 85%;
+}
+.cardsSection .card:nth-child(2){
+  background: #afa7a7c4 url('https://i.postimg.cc/br4P3nQJ/asmina.png') center no-repeat;
+  background-size: 100%;
+}
+.cardsSection .card:nth-child(3){
+  background: #afa7a7c4 url('https://i.postimg.cc/DzQqhdZ9/IMG-20250804-WA0008-removebg-preview.png') center no-repeat;
+  background-size: 100%;
+}
+.cardsSection .card:nth-child(4){
+  background: #afa7a7c4 url('https://i.postimg.cc/YSmtLbgP/liza-removebg-preview.png') center no-repeat;
+  /* background-size: 110%; */
+}
+.cardsSection .card:nth-child(5){
+  background: #afa7a7c4 url('https://i.postimg.cc/TPZgn7s5/Whats-App-Image-2025-08-04-at-10-19-09-7ea6e6b6-removebg-preview.png') center no-repeat;
+  background-size: 90%;
+}
+.cardsSection .card:nth-child(6){
+  background: #afa7a7c4 url('https://i.postimg.cc/T31t9stt/Naira-Aziz.png') center no-repeat;
+  background-size: 100%;
+}
+.cardsSection .card:nth-child(7){
+  background: #afa7a7c4 url('https://i.postimg.cc/kGfgnD3F/liana-gharibyan.png') center no-repeat;
+  background-size: 100%;
+}
+.cardsSection .card:nth-child(8){
+  background: #afa7a7c4 url('https://i.postimg.cc/dVvD8Mny/Eliana-Polishchuk.png') center no-repeat;
+  background-size: 100%;
+}
+.cardsSection .card:nth-child(9){
+  background: #afa7a7c4 url('https://i.postimg.cc/VNrgnbKv/arafat.png') center no-repeat;
+  background-size: 97%;
+}
+.cardsSection .card:nth-child(10){
+  background: #afa7a7c4 url('https://i.postimg.cc/y8YzcJcF/Whats-App-Image-2025-08-01-at-20-06-08-a2f7d31d-Copy-removebg-preview.png') center no-repeat;
+  background-size: 100%;
+}
+.cardsSection .card:nth-child(11){
+  background: #afa7a7c4 url('https://i.postimg.cc/V60hfVx7/Elias-Melky.png') center no-repeat;
+  background-size: 100%;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 250px;
+  height: 264px;
+  border-radius: 10px;
+  background:  linear-gradient(
+    162deg,
+    rgb(204, 155, 9) 25%,
+    rgba(17, 166, 189, 1) 40%,
+   rgba(125, 9, 115, 1) 78%
+  );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    162deg,
+    rgb(204, 155, 9) 25%,
+    rgba(17, 166, 189, 1) 40%,
+   rgba(125, 9, 115, 1) 78%
+  );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.1) scaleY(0.97);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-icon">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+   <header class="header">
+      <div class="topbar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-8 col-12">
+              <ul class="contact-info">
+                <li><i class="fa-solid fa-phone-volume"></i> <a href="tel: ‪+1 (954) 820-6464‬
+"> ‪+1 (954) 820-6464‬
+</a></li>
+                <li>
+                <i class="fa-solid fa-envelope-open"></i>
+                  <a href="mailto: noc@ics-voice.net
+"target="_blank">noc@ics-voice.net
+</a>
+                </li>
+                <li>
+                <i class="fa-solid fa-globe"></i>
+                  <a href="https://www.ics-voice.net" target="_blank">ics-voice.net 
+</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-4 col-12">
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html"
+                  ><img src="assets/images/logo.jpg" alt="#"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" >
+                      <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                  </ul>
+                  <div class="button">
+                    <a href="contact.html" class="btn">Get it now</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="breadcrumbs-content">
+              <h1 class="page-title">About Us</h1>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <ul class="breadcrumb-nav">
+              <li><a href="index.html">Home</a></li>
+              <li>About Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+      <div class="container">
+        <div class="row align-items-center">
+     <div class="row" style="margin-top: 1.3rem;">
+          <div class="col-12">
+            <div class="section-title">
+              <span class="wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Our Team</span>
+              <h2 class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                Team Of ICS(international carrier servies)LLC
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                Ics is constantly seeking active agents worldwide who would be
+                interested to start a carrier in Voice over IP Industry.
+              </p>
+              <h3 class="overlay-text">Services</h3>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+
+    <div class="cardsSection  wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;" >
+    <div class="cardsSection  wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;" >
+      <div class="card">
+        <div class="heading">
+       <h4>Head Of Noc Team</h4>
+       <h5>Mr. Haidar Ali</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+       <h4> <small>Ast.</small>Rate Manager</h4>
+       <h5>Mrs. Asmina khatun</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <h4>Account Manager</h4>
+          <h5> Mariam Mrktchyan</h5>
+        </div>
+      </div>
+     
+      <div class="card">
+        <div class="heading">
+          <h4>Rate Manager</h4>
+          <h5> Liza Sargsyan</h5>
+        </div>
+      </div>
+
+<!--  -->
+      <div class="card  wow fadeInLeft" data-wow-delay=".5s">
+        <div class="heading">
+          <h4>Account Manager</h4>
+          <h5>Mr.Nicola danha for CC</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <h6>Head Of Whole Sales Mngr.</h6>
+          <h5>Naira Aziz</h5>
+        </div>
+      </div>
+     <div class="card">
+        <div class="heading">
+          <h5>Account Manager</h5>
+          <h5>Liana Gharibyan</h5>
+        </div>
+      </div>
+     <div class="card  wow fadeInRight" data-wow-delay=".5s">
+        <div class="heading">
+          <h5>Sales Manager</h5>
+          <h5>Elina PolishChuk</h5>
+        </div>
+      </div>
+      <!--  -->
+     <div class="card">
+        <div class="heading">
+          <h6>Sales Account Manager</h6>
+          <h6>Mr. Arafat Nazeer for Narcomtel</h6>
+        </div>
+      </div>
+     
+     <div class="card wow fadeInUp" data-wow-delay=".5s" style="visibility: visible;">
+        <div class="heading">
+          <h5>Chief Operating Officer</h5>
+          <h5>Naira Khachikyan</h5>
+        </div>
+      </div>
+     <div class="card">
+        <div class="heading">
+          <h5>Chief Execution Officer</h5>
+          <h5>Mr. Elias Melky- ICS LLC</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Start About Us Area -->
+    <section class="about-us section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="about-left">
+              <div class="section-title align-left">
+                <span class="wow fadeInDown" data-wow-delay=".2s"
+                  >Every day brings new challenges</span
+                >
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">
+                  We provide you with the best possible results.
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  Our interest does not lie with the manufacturers or carriers
+                  we represent. It is about how we can best help you to improve
+                  your business. Providing a unique solution that works best for
+                  you helps establish a partnership that will benefit us both,
+                  for the life of your business.
+                </p>
+                <p class="wow fadeInUp" data-wow-delay=".8s">
+                  Our skilled Team members provide you the expertise you need to
+                  ensure you are equipped with the right tools and your systems
+                  are providing your business the best possible values.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="about-right wow fadeInRight" data-wow-delay=".4s">
+              <img src="assets/images/about/about-img2.png" alt="#" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /End About Us Area -->
+
+    <!-- Start Services Area -->
+    <section class="all-services style3 section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div style="margin: 0" class="content">
+              <p>
+                Welcome to ICS LLC, your one-stop platform for all the
+                IT and Telecommunications services you rely on to run your
+                business. We are experts in Managed Services, Networking, and
+                Voice over IP (VoIP), Telephone System, Computer Cabling, and
+                High Speed Internet Solutions. We are committed to providing you
+                not only the best products and services, but also those which
+                are best for your organization’s unique needs.
+              </p>
+              <p>
+                With over 15 years of combined experience in the IT and
+                Telecommunications field, our skilled Team members provide you
+                the expertise you need to ensure you are equipped with the right
+                tools and your systems are providing your business the best
+                possible values.
+              </p>
+              <p>
+                At ICS LLC, we’re all about YOU. Our products and
+                services are designed:
+              </p>
+              <ul>
+                <li>To enhance the way YOU do business</li>
+                <li>
+                  To provide YOU with the best possible results that improve
+                  YOUR bottom line
+                </li>
+                <li>To meet YOUR specific needs</li>
+              </ul>
+              <p>
+                Our interest does not lie with the manufacturers or carriers we
+                represent. It is about how we can best help you to improve your
+                business. Providing a unique solution that works best for you
+                helps establish a partnership that will benefit us both, for the
+                life of your business.
+              </p>
+              <h2>Our network partnerships</h2>
+              <ul style="margin-bottom: 0">
+                <li>
+                  Give you the ability to easily scale your data and voice
+                  capacities as required
+                </li>
+                <li>
+                  Allow multiple locations to communicate with each other
+                  directly and securely
+                </li>
+                <li>
+                  Allow those multiple locations to make internal calls without
+                  incurring long distance charges
+                </li>
+                <li>
+                  Allocate bandwidth between voice and data services, thereby
+                  cutting costs and leveraging your network
+                </li>
+                <li>
+                  Keep data and voice traffic secure and out of the public
+                  Internet
+                </li>
+                <li>
+                  Utilize your existing phone system or upgrade to a new
+                  IP-based phone system
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+      <div class="custom-shape-divider-top-1754221033">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="call-action">
+        <div class="container">
+          <div class="inner-content">
+            <div class="row align-items-center">
+              <div class="col-lg-8 col-md-8 col-12">
+                <h2>Ready to get started with us?</h2>
+                <p>
+                  Our skilled Team members provide you the expertise you need to
+                  ensure you are equipped with the right tools and your systems
+                  are providing your business the best possible values.
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="button">
+                  <a href="contact.html" class="btn">Get started Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Middle Top -->
+      <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-12">
+              <!-- Single Widget -->
+              <div class="f-about single-footer">
+                <div class="companyAdress">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="assets/images/logo.jpg" alt="Logo"
+                    /></a>
+                  </div>
+                  <div class="haiderInfo">
+                 
+                    <p>
+                      ICS International NOC Team 7777 Davie Road Ext., Suite
+                      302B Hollywood, FL 33024, USA-
+                      <i class="fa-solid fa-globe"></i>ics-voice.net
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-phone-volume"></i> ‪+1 (954)
+                      820-6464‬<br />
+                      <i class="fa-solid fa-envelope-open"></i>
+                      noc@ics-voice.net
+                    </p>
+                  </div>
+                </div>
+
+                <p>
+                  Welcome to Ics, your one-stop platform for all the IT and
+                  Telecommunications services you rely on to run your business.
+                </p>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-8 col-md-7 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-12 col-12"></div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <!-- Single Widget -->
+                  <div class="single-footer f-link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <!-- Single Widget -->
+                  <div class="single-footer f-link">
+                    <h3>Services</h3>
+                    <ul>
+                      <li><a href="services.html">High quality Voice</a></li>
+                      <li><a href="services.html">Wholesale services</a></li>
+                      <li><a href="services.html">Retail Services</a></li>
+                      <li><a href="services.html">Agent services</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <!-- Single Widget -->
+                  <div
+                    style="margin-top: 85px"
+                    class="single-footer f-link small-margin"
+                  >
+                    <ul>
+                      <li><a href="services.html">Support services</a></li>
+                      <li>
+                        <a href="services.html">Interconnection Services</a>
+                      </li>
+                      <li><a href="services.html">Carrier Interconnect </a></li>
+                      <li>
+                        <a href="services.html">Call Termination Service</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Single Widget -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Footer Middle -->
+      <!-- Start Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="inner">
+            <div class="row">
+              <div class="col-12">
+                <div class="left">
+                  <p>
+                    © 2025<a
+                      href="https://www.ics-voice.net "
+                      rel="Dofollow"
+                      target="_blank"
+                      >www.ics-voice.net </a
+                    >. All rights reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/main.js"></script>
+     
+  </body>
+</html>
