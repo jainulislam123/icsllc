@@ -2592,7 +2592,7 @@ ol {
 }
 
 .features.style3 .single-feature:hover i {
-  background-color: var(--themeColor);
+  background: var(--themeColor);
   color: #fff;
 }
 
@@ -2683,7 +2683,7 @@ ol {
 
 .all-services .content {
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffffc1;
   padding: 50px 40px;
   border-radius: 5px;
   z-index: 5;
@@ -2693,6 +2693,7 @@ ol {
   box-shadow: 0px 0px 30px rgba(87, 87, 87, 0.11);
   border-radius: 10px;
   margin-top: 30px;
+  backdrop-filter: blur(4px);
 }
 
 .all-services .content h2 {
@@ -2737,7 +2738,7 @@ ol {
   top: 8px;
   height: 7px;
   width: 7px;
-  background-color: var(--themeColor);
+  background: var(--themeColor);
   border-radius: 50%;
 }
 
@@ -4369,7 +4370,7 @@ ol {
 .contact-us .inner-title {
   font-size: 20px;
   font-weight: 600;
-  border-bottom: 1px dashed var(--themeColor);
+  border-bottom: 1px dashed #590253;
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
@@ -4378,7 +4379,8 @@ ol {
   padding: 50px;
   border-radius: 5px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #ffffffaf;
+  backdrop-filter: blur(4px);
 }
 
 .contact-us .title {
@@ -4451,7 +4453,7 @@ ol {
 }
 
 .contact-us .single-info ul li a:hover {
-  color: var(--themeColor);
+  color: #5e0134;
 }
 
 .contact-us .single-info .title {
