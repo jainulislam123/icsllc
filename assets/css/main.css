@@ -3151,7 +3151,7 @@ ol {
     border: none;
   }
   .header .navbar-nav .dropdown-menu li a:hover {
-    background-color: var(--themeColor);
+    background: var(--themeColor);
     color: #fff !important;
     border-color: transparent;
   }
@@ -3611,7 +3611,10 @@ ol {
     opacity: 1;
     bottom: 0px;
   }
-
+  .headCards,
+  .cardsSection {
+    width: 100%;
+  }
   .section {
     padding: 50px 0px;
   }
