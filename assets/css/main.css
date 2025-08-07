@@ -3609,6 +3609,7 @@ ol {
     width: 30%;
     opacity: 1;
     bottom: 0px;
+    /* bottom: 0px; */
   }
   .companyAdress {
     flex-wrap: wrap;
